@@ -26,7 +26,7 @@
             background-size: 350px 200px;
         }
         .card-back{
-            background-color: burlywood;
+            background-color: rgb(119, 119, 119);
             transform: rotateY(180deg);
         }
         .card-inner:hover{
@@ -47,15 +47,72 @@
             justify-content: center;
             align-items: center;
         }
+        #name{
+            position: relative; 
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            font-weight: bold;
+            height: 100%;
+            background-color: rgba(0,0,0, 0.6);
+            border-radius: 10px;
+            text-align: center;
+        }
+        #text{
+            position: relative;
+            top: 40%;
+            box-shadow: 3px 3px 3px;
+        }
+        #frontLine{
+            margin-top: -10%;
+            height: 0.2em;
+            background-color: rgb(0, 0, 0);
+        }
+        .email{
+            color: rgb(255, 255, 255);
+        }
+        .icons{
+            position: relative;
+            margin-top: 48%;
+            margin-left: 53%;
+        }
+        .icons a i{
+			height:25px;
+			width:30px;
+			background:white;
+			padding-top:3px;
+			text-align:center;
+			border-radius:50%;
+			color:black;
+			border: 1px solid black;
+		}
+        a i:hover{
+            cursor: pointer;
+			transform:rotate(45deg);
+			transition:0.4s;
+			background:#000000;
+			color:red;
+			border: 1px solid red;
+		}
+        #backLine{
+            margin-top: -10%;
+        }
     </style>
+    <script src="https://kit.fontawesome.com/23c1a70bab.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="card">
         <div class="card-inner">
             <div class="card-front">
+                <div id="name"><span id="text">Amar Kumar Chaturvedi</span></div><hr id="frontLine">
             </div>
             <div class="card-back">
-
+                <div class="icons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+                <hr id="backLine">
             </div>
         </div>
     </div>
